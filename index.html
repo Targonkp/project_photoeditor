@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Фото-редактор</title>
+</head>
+<body>
+<section>
+<div class="toppart">
+    <div id="btn" >Выберите изображение</div>
+    <input type="file"  tabindex="-1" id="uploadPicture" />
+</div>
+<div class="images-classes" draggable="true">
+    <div class="image"><img src="" id='img1'  alt="Image preview..." width="490px" height="340px"></div>
+       <div> <ul>
+            <li value="1">Стиль1</li>
+            <li value="2">Стиль2</li>
+            <li value="3">Стиль3</li>
+            <li value="4">Стиль4</li>
+            <li value="5">Стиль5</li>
+            <li value="6">Стиль6</li>
+            <li value="7">Стиль7</li>
+            <li value="8">Стиль8</li>
+            <li value="9">Стиль9</li>
+            <li value="10">Стиль10</li>
+            <li value="11">Стиль11</li>
+            <li value="12">Стиль12</li>
+            <li value="13">Стиль13</li>
+           <li value="14">Стиль14</li>
+           <li value="15">Стиль15</li>
+           <li value="16">Стиль16</li>
+
+        </ul>
+           <button id="saveimg">Сохранить</button>
+    </div>
+
+</div>
+    <div id="canvasforsave"></div>
+
+</section>
+<script src="js/html2canvas.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
