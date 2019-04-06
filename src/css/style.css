@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/main.jpg);
+    background-image: url(images/main2.jpg);
     background-size: cover;
 }
 
@@ -66,14 +66,14 @@ section {
 
 ul {
     display: flex;
-    width: 320px;
+    width: 340px;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
     align-items: center;
 }
 ul li {
-    width: 65px;
+    width: 73px;
     height: 43px;
     border: 2px solid black;
     margin:5px;
@@ -82,7 +82,7 @@ ul li {
     transition: 1s;
     color:navajowhite;
     box-sizing: border-box;
-    padding: 7px 5px;
+    padding: 7px 7px;
     transition: 3s;
 }
 
@@ -92,6 +92,17 @@ ul li:hover {
     transition: 1.5s;
 }
 
+#saveimg {
+    margin:5px 50px;
+    width: 120px;
+    height:45px;
+    color:darkgreen;
+    font-size: 18px;
+    background: #f1da36;
+    border-left: darkgreen 2px solid;
+    border-right: darkslategray 2px solid;
+    box-shadow: #ff6b36 3px 3px;
+}
 
 
 .fil1 {

@@ -125,3 +125,12 @@ function filter(event){
 }
 
 ulEl.addEventListener('click', filter);
+
+
+setTimeout(
+    function () {
+        document.body.style.background="url('css/images/main.jpg')";
+        document.body.style.transition='7s';
+    },
+    2000
+);
