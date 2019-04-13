@@ -3,10 +3,9 @@
 const input = document.getElementById("uploadPicture");
 const preview1 = document.getElementById('img1');
 const btnEl = document.getElementById ('btn');
-const saveimgEl = document.getElementById('saveimg');
-const canvasforsaveEl = document.getElementById('canvasforsave');
 const nodel = document.querySelectorAll('ul li');
 const ulEl = document.querySelector('ul');
+const areaEl = document.getElementById('area');
 
 
 function previewFile() {
@@ -38,17 +37,6 @@ btnEl.addEventListener('click',
     }
 );
 
-function func() {
-    html2canvas(preview1).then(function(canvas) {
-        document.body.appendChild(canvas);
-    });
-
-}
-
-saveimgEl.addEventListener(
-   'click',
-    func
-)
 
 const arrEl = Array.from(nodel);
 function filter(event){
@@ -126,11 +114,5 @@ function filter(event){
 
 ulEl.addEventListener('click', filter);
 
-
-setTimeout(
-    function () {
-        document.body.style.background="url('css/images/main.jpg')";
-        document.body.style.transition='7s';
-    },
-    2000
-);
+const styles = getComputedStyle(preview1);
+areaEl.textContent = styles.border + styles.color + styles.filter;
