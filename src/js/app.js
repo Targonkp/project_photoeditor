@@ -3,6 +3,7 @@
 const input = document.getElementById("uploadPicture");
 const preview1 = document.getElementById('img1');
 const btnEl = document.getElementById ('btn');
+const applyEl = document.getElementById ('apply');
 const nodel = document.querySelectorAll('ul li');
 const ulEl = document.querySelector('ul');
 const areaEl = document.getElementById('area');
@@ -107,12 +108,24 @@ function filter(event){
     {
         preview1.classList.add('fil16');
     }
-
-
-
 }
+
+
 
 ulEl.addEventListener('click', filter);
 
-const styles = getComputedStyle(preview1);
-areaEl.textContent = styles.border + styles.color + styles.filter;
+
+applyEl.addEventListener(
+    'click',
+    ()=>{
+        let newfil = areaEl.value;
+        preview1.style.filter = newfil;
+    }
+)
+
+areaEl.addEventListener(
+    'click',
+    ()=>{
+        areaEl.value = '';
+    }
+)
